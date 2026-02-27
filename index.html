@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hope Deacrdi-Nelson | Software Engineer & Data Scientist</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4f46e5',     // indigo-600
+            secondary: '#7c3aed',   // violet-600
+            accent: '#ec4899',      // pink-500
+          },
+          animation: {
+            'fadeInUp': 'fadeInUp 1s ease-out forwards',
+            'float': 'float 7s ease-in-out infinite',
+            'glow': 'glow 3s ease-in-out infinite alternate',
+            'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            glow: {
+              'from': { textShadow: '0 0 15px #ec4899, 0 0 30px #a855f7' },
+              'to':   { textShadow: '0 0 30px #c084fc, 0 0 60px #c084fc' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="bg-gradient-to-br from-gray-950 via-indigo-950 to-violet-950 text-gray-100 min-h-screen font-sans antialiased">
+
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="fixed top-6 right-6 z-50 p-3 rounded-full bg-gray-800/60 backdrop-blur-md hover:bg-gray-700 transition-all duration-300 shadow-lg">
+    <i class="fas fa-moon text-xl"></i>
+  </button>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
+    <div class="absolute inset-0 opacity-20 pointer-events-none">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_15%_25%,rgba(79,70,229,0.5),transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_85%_75%,rgba(236,72,153,0.4),transparent_60%)]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 animate-glow">
+        Hope Deacrdi-Nelson
+      </h1>
+      <p class="text-2xl md:text-4xl font-semibold text-indigo-300 mb-6">
+        Backend Engineer
+      </p>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-gray-300 leading-relaxed">
+        AWS Cloud Practitioner certified | Building scalable AI-driven systems, modern web 
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-6">
+        <a href="https://www.linkedin.com/in/hope-decardi-nelson-990211257/" target="_blank" 
+           class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-full font-bold text-lg shadow-lg shadow-indigo-600/40 transition-all duration-300 hover:scale-105 hover:shadow-xl flex items-center">
+          <i class="fab fa-linkedin mr-2"></i> LinkedIn
+        </a>
+        <a href="https://github.com/blackbox24" target="_blank" 
+           class="px-8 py-4 bg-transparent border-2 border-indigo-400 hover:bg-indigo-500/20 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center">
+          <i class="fab fa-github mr-2"></i> GitHub
+        </a>
+        <a href="mailto:nicardid@gmail.com" 
+           class="px-8 py-4 bg-transparent border-2 border-pink-500 hover:bg-pink-500/20 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 flex items-center">
+          <i class="fas fa-envelope mr-2"></i> Email
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About & Summary -->
+  <section id="about" class="py-24 px-6 bg-black/30">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-5xl font-bold text-center mb-16 animate-fadeInUp">Professional Summary</h2>
+      <p class="text-xl leading-relaxed text-center max-w-4xl mx-auto mb-12 text-gray-300 opacity-0 animate-[fadeInUp_1s_ease-out_0.3s_forwards]">
+        Highly motivated Software Engineer with a BTech in Data Science and expertise in full stack development, API design, and DevOps. Proficient in modern frameworks such as React, Django, with a proven track record of delivering innovative solutions, including AI-driven systems and management applications. AWS Cloud Practitioner certified, with a passion for leveraging technology to solve real-world challenges.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="opacity-0 animate-[fadeInUp_1s_ease-out_0.4s_forwards]">
+          <h3 class="text-3xl font-bold mb-6 text-indigo-400">Contact</h3>
+          <ul class="space-y-4 text-lg">
+            <li><i class="fas fa-map-marker-alt mr-3 text-accent"></i> Accra, Greater Accra Region, Ghana</li>
+            <li><i class="fas fa-phone mr-3 text-accent"></i> +233 209 117 002</li>
+            <li><i class="fas fa-envelope mr-3 text-accent"></i> nicardid@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="opacity-0 animate-[fadeInUp_1s_ease-out_0.6s_forwards]">
+          <h3 class="text-3xl font-bold mb-6 text-indigo-400">Education</h3>
+          <div class="space-y-6">
+            <div>
+              <p class="font-bold text-xl">BTech Data Science</p>
+              <p class="text-gray-400">Kumasi Technical University • Jan 2020 – Aug 2024 • Kumasi</p>
+            </div>
+            <div>
+              <p class="font-bold text-xl">General Arts</p>
+              <p class="text-gray-400">Apam Senior High School • Oct 2017 – Jun 2019 • Apam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-5xl font-bold text-center mb-16 animate-fadeInUp">Skills</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float">
+          <i class="fas fa-database text-5xl text-green-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">MySQL, MongoDB, PostgreSQL</p>
+        </div>
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float" style="animation-delay:0.1s">
+          <i class="fab fa-react text-5xl text-cyan-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">React • React Native</p>
+        </div>
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float" style="animation-delay:0.3s">
+          <i class="fab fa-python text-5xl text-yellow-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">Python • Django</p>
+        </div>
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float" style="animation-delay:0.4s">
+          <i class="fas fa-server text-5xl text-purple-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">Django REST Framework</p>
+        </div>
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float" style="animation-delay:0.5s">
+          <i class="fas fa-code-branch text-5xl text-orange-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">Git • Docker • GitHub</p>
+        </div>
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float" style="animation-delay:0.6s">
+          <i class="fas fa-cloud text-5xl text-sky-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">AWS Cloud Practitioner</p>
+        </div>
+        <div class="group p-6 bg-gray-900/50 backdrop-blur-md rounded-xl border border-indigo-500/30 hover:border-indigo-400 transition-all duration-300 hover:scale-105 animate-float" style="animation-delay:0.7s">
+          <i class="fas fa-laptop-code text-5xl text-pink-400 mb-4 block group-hover:animate-bounce"></i>
+          <p class="font-semibold text-center text-lg">Nodejs • Express</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Projects -->
+  <section id="projects" class="py-24 px-6 bg-black/30">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-5xl font-bold text-center mb-16 animate-fadeInUp">Key Projects</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-600/30 opacity-0 animate-[fadeInUp_1s_ease-out_forwards]">
+          <div class="h-48 bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center">
+            <i class="fas fa-receipt text-8xl text-white/70 group-hover:scale-110 transition-transform duration-500"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Receipt Generator System</h3>
+            <p class="text-gray-400 mb-4">Scalable retail system using Python Django & MySQL — reduced transaction time by 30%.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-600/30 opacity-0 animate-[fadeInUp_1s_ease-out_0.2s_forwards]">
+          <div class="h-48 bg-gradient-to-br from-violet-600 to-purple-600 flex items-center justify-center">
+            <i class="fas fa-hotel text-8xl text-white/70 group-hover:scale-110 transition-transform duration-500"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Hotel Management System</h3>
+            <p class="text-gray-400 mb-4">Comprehensive platform with React & Laravel — improved operations & guest experience.</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-gray-700 hover:border-indigo-500 transition-all duration-500 hover:shadow-2xl hover:shadow-indigo-600/30 opacity-0 animate-[fadeInUp_1s_ease-out_0.4s_forwards]">
+          <div class="h-48 bg-gradient-to-br from-pink-600 to-rose-600 flex items-center justify-center">
+            <i class="fas fa-road text-8xl text-white/70 group-hover:scale-110 transition-transform duration-500"></i>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">AI Pothole Detection System</h3>
+            <p class="text-gray-400 mb-4">Real-time road hazard detection using machine learning & Python for enhanced safety.</p>
+          </div>
+        </div>
+
+        <!-- Add more if you want, e.g. School Management, To-do API, etc. -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-5xl font-bold text-center mb-16 animate-fadeInUp">Professional Experience</h2>
+      <div class="bg-gray-900/50 backdrop-blur-md rounded-2xl p-8 border border-indigo-500/30 opacity-0 animate-[fadeInUp_1s_ease-out_0.6s_forwards]">
+        <h3 class="text-3xl font-bold mb-4">Software Engineer</h3>
+        <p class="text-xl text-indigo-300 mb-4">Legacy Hospital, Accra, Ghana • June 2024 – Present</p>
+        <ul class="space-y-4 text-lg list-disc pl-6 text-gray-300">
+          <li>Maintain and optimize hospital network infrastructure, ensuring reliable connectivity and system performance.</li>
+          <li>Administer servers and workstations, implementing updates and security protocols to enhance operational efficiency.</li>
+          <li>Train and support staff on the hospital management system, increasing user adoption and reducing operational errors by 20%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Footer -->
+  <section class="py-16 px-6 bg-black/40 text-center">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-8 animate-fadeInUp">Achievements</h2>
+      <div class="inline-block bg-gray-900/60 backdrop-blur-md px-10 py-6 rounded-2xl border border-indigo-500/40 shadow-2xl opacity-0 animate-[fadeInUp_1s_ease-out_forwards]">
+        <p class="text-2xl font-semibold"><i class="fas fa-certificate text-yellow-400 mr-3"></i>AWS Cloud Practitioner Certified</p>
+      </div>
+
+      <p class="mt-16 text-gray-400">© 2026 Hope Deacrdi-Nelson • Built with passion & Tailwind CSS</p>
+    </div>
+  </section>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+      toggle.innerHTML = '<i class="fas fa-sun text-xl"></i>';
+    } else {
+      html.classList.remove('dark');
+      toggle.innerHTML = '<i class="fas fa-moon text-xl"></i>';
+    }
+
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      if (html.classList.contains('dark')) {
+        localStorage.theme = 'dark';
+        toggle.innerHTML = '<i class="fas fa-sun text-xl"></i>';
+      } else {
+        localStorage.theme = 'light';
+        toggle.innerHTML = '<i class="fas fa-moon text-xl"></i>';
+      }
+    });
+  </script>
+
+</body>
+</html>
