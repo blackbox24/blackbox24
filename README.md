@@ -6,7 +6,7 @@ Live demo:
 👉 [https://blackbox24.github.io ](https://blackbox24.github.io/blackbox24/) 
 (or replace with your actual GitHub Pages URL once deployed)
 
-![Portfolio Preview](https://via.placeholder.com/1280x720/4f46e5/ffffff?text=Portfolio+Screenshot)  
+![Portfolio Preview](./preview.png)  
 *(Add a real screenshot here later – recommended size: ~1280×720)*
 
 ## ✨ Features
